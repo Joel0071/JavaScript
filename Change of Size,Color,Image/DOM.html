@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Style.css">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Div Manupulation</h1>
+    <div id="Div" align="center">
+        This is Div
+        <img id="Div1" src=""> 
+    </div>
+
+    <p>Chnage the Div Using Buttons</p>
+
+    <br><hr>
+
+    <input type="button" value="Color" onclick="Color()">
+    <input type="button" value="Size" onclick="Size()">
+    <input type="button" value="Add_Image" onclick="Add_Image()">
+    <input type="button" value="Remove_Image" onclick="Remove_Image()">
+
+    <script>
+        function Color(){
+            document.getElementById("Div").style.backgroundColor="red";
+        }
+
+        function Size(){
+            document.getElementById("Div").style.height="300px";
+            document.getElementById("Div").style.width="300px";
+        }
+
+        function Add_Image(){
+            document.getElementById("Div1").setAttribute("src","lol.jpg");
+        }
+
+        function Remove_Image(){
+            document.getElementById("Div1").setAttribute("src","");
+        }
+    </script>
+
+</body>
+</html>
+
+
+
+
+
