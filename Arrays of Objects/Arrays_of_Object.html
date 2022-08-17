@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Country_1={
+        Name:"America",
+        Capital:"Wahsington_DC",
+        Population:2500
+    }
+
+        var Country_2={
+            Name:"India",
+            Capital:"Delhi",
+            Population:1990
+    }
+
+        var Country_3={
+            Name:"Pakistan",
+            Capital:"Karachi",
+            Population:1400
+    }
+
+        var Country_4={
+            Name:"Bangladesh",
+            Capital:"Dhaka",
+            Population:1300
+    }
+    let Con=[Country_1,Country_2,Country_3,Country_4];
+    console.log(Con[1].Name);
+    console.log("The Countries are as Follows...");
+    for(let i=0;i<4;i++){
+        console.log(Con[i]);
+    }
+
+    console.log("The Countries which have Population Less than 2000 are..");
+    for(let i=0;i<4;i++){
+        if(Con[i].Population<2000){
+            console.log(Con[i].Name);
+        }
+        
+    }
+
+    </script>
+</body>
+</html>
